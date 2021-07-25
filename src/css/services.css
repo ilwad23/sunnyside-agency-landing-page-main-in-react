@@ -1,0 +1,48 @@
+.services {
+  display: flex;
+}
+.service {
+  position: relative;
+}
+.service,
+.service_img {
+  width: 720px;
+  height: 600px;
+}
+.service_img {
+  position: absolute;
+  z-index: -100;
+}
+.service_text {
+  position: absolute;
+  bottom: 60px;
+  left: 150px;
+  text-align: center;
+  font-family: "Fraunces";
+  font-weight: bolder;
+  width: 450px;
+}
+.service_para {
+  font-family: "Barlow" !important;
+  font-weight: bolder;
+  font-size: 18px !important;
+  padding: 30px 30px;
+  line-height: 22.3px;
+}
+@media (max-width: 375px) {
+  .services {
+    display: block;
+  }
+  .service,
+  .service_img {
+    width: 375px;
+    height: 600px;
+  }
+  .service_text {
+    left: 0px;
+    width: 100%;
+  }
+  .service_para {
+    font-size: 15px !important;
+  }
+}

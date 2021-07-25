@@ -1,0 +1,61 @@
+.benefits_para {
+  font-family: "Barlow" !important;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 30.3px;
+  color: hsl(206, 16%, 45%);
+}
+
+@media (min-width: 376px) {
+  .benefits {
+    display: flex;
+    width: 1440px;
+    height: 600px;
+  }
+  .benefits_img {
+    height: 600px;
+    width: 720px;
+  }
+
+  .benefits_text {
+    font-family: "Fraunces";
+    padding: 140px;
+    width: 720px;
+  }
+  .benefits_title,
+  .benefits_para,
+  .benefits_btn {
+    width: 400px;
+  }
+  .benefits_btn {
+    width: fit-content;
+  }
+  .benefits_para {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 375px) {
+  .benefits {
+    display: block;
+    width: 375px;
+  }
+  .benefits_img {
+    height: 312px;
+    width: 375px;
+    margin: 0%;
+  }
+
+  .benefits_text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Fraunces";
+    padding: 40px 20px;
+  }
+  .benefits_para {
+    padding: 30px 0px;
+  }
+  .benefits_btn {
+    margin: auto;
+  }
+}

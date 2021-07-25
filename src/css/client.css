@@ -1,0 +1,50 @@
+.client_para {
+  font-family: "Barlow";
+  color: rgb(90, 89, 89);
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 25px;
+  padding: 20px;
+}
+.client_name {
+  font-family: "Fraunces";
+  color: #000;
+}
+.client_status {
+  font-size: 10px;
+  opacity: 0.5;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+.client_img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin: 10px;
+}
+@media (max-width: 375px) {
+  .client_para {
+    font-family: "Barlow";
+    color: rgb(90, 89, 89);
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 25px;
+    padding: 20px;
+  }
+  .client_name {
+    font-family: "Fraunces";
+    color: #000;
+  }
+  .client_status {
+    font-size: 10px;
+    opacity: 0.5;
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  .client_img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin: 10px;
+  }
+}

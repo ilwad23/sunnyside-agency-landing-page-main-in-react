@@ -1,0 +1,8 @@
+@media (min-width: 376px) {
+  .gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    background-color: #ff0;
+  }
+}
