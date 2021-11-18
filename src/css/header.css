@@ -1,22 +1,22 @@
 header {
   position: relative;
-  width: 1440px;
+  width: 100vw;
   height: 800px;
 }
 .header_img {
-  width: 1440px;
-  height: 800px;
+  width: 100vw;
+  max-height: 800px;
   position: absolute;
   z-index: -100;
 }
 .header_arrow-down {
   position: absolute;
-  top: 370px;
-  left: 710px;
+  bottom: 57vh;
+  left: 50vw;
 }
+
 .header_title {
-  /* background-color: #142; */
-  font-size: 2rem;
+  font-size: 2.2vw;
   color: #fff;
   text-decoration: uppercase;
   font-family: "Fraunces";
@@ -25,11 +25,18 @@ header {
   margin: 30px auto;
   text-align: center;
 }
+.header_logo {
+  /* width: fit-content;
+  height: fit-content; */
+  padding-top: 3vh;
+}
 nav {
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
+  padding: 0px 40px;
 }
 .header_menu-links {
   display: flex;

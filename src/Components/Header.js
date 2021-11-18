@@ -1,27 +1,27 @@
 import React, { useState } from "react";
 import "../css/header.css";
+import HeaderPicD from "../images/desktop/image-header.jpg";
+import HeaderPicM from "../images/mobile/image-header.jpg";
+import Logo from "../images/logo.svg";
+import Arrow from "../images/icon-arrow-down.svg";
 import MenuIcon from "@material-ui/icons/Menu";
-
 
 const Header = ({ desktopOrMobile }) => {
   const [show, setShow] = useState(false);
-  const desktop = desktopOrMobile === 'desktop'
+  const desktop = desktopOrMobile === "desktop";
+  const HeaderPic = desktopOrMobile === "desktop" ? HeaderPicD : HeaderPicM;
   console.log(desktopOrMobile);
   return (
     <header className="header">
+      <img src={HeaderPic} alt="Header" className="header_img" />
       <img
-        src={`./images/${desktopOrMobile}/image-header.jpg`}
-        alt="Header"
-        className="header_img"
-      />
-      <img
-        src="./images/icon-arrow-down.svg"
+        src={Arrow}
         className="header_arrow-down"
         alt="arrow facing down"
         style={{ display: show && "none" }}
       />
       <nav>
-        <img src="./images/logo.svg" className='header_logo' alt="logo" />
+        <img src={Logo} className="header_logo" alt="logo" />
         <MenuIcon
           className="header_menu"
           onClick={() => setShow(!show)}
