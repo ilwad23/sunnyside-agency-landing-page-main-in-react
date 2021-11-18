@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/sunnyside-agency-landing-page-main-in-react/static/css/main.c977b81f.chunk.css",
-    "main.js": "/sunnyside-agency-landing-page-main-in-react/static/js/main.94499f85.chunk.js",
-    "main.js.map": "/sunnyside-agency-landing-page-main-in-react/static/js/main.94499f85.chunk.js.map",
+    "main.css": "/sunnyside-agency-landing-page-main-in-react/static/css/main.c641d45a.chunk.css",
+    "main.js": "/sunnyside-agency-landing-page-main-in-react/static/js/main.41271920.chunk.js",
+    "main.js.map": "/sunnyside-agency-landing-page-main-in-react/static/js/main.41271920.chunk.js.map",
     "runtime-main.js": "/sunnyside-agency-landing-page-main-in-react/static/js/runtime-main.88c781cd.js",
     "runtime-main.js.map": "/sunnyside-agency-landing-page-main-in-react/static/js/runtime-main.88c781cd.js.map",
     "static/js/2.e64b3d8f.chunk.js": "/sunnyside-agency-landing-page-main-in-react/static/js/2.e64b3d8f.chunk.js",
     "static/js/2.e64b3d8f.chunk.js.map": "/sunnyside-agency-landing-page-main-in-react/static/js/2.e64b3d8f.chunk.js.map",
     "index.html": "/sunnyside-agency-landing-page-main-in-react/index.html",
-    "static/css/main.c977b81f.chunk.css.map": "/sunnyside-agency-landing-page-main-in-react/static/css/main.c977b81f.chunk.css.map",
-    "static/js/2.e64b3d8f.chunk.js.LICENSE.txt": "/sunnyside-agency-landing-page-main-in-react/static/js/2.e64b3d8f.chunk.js.LICENSE.txt"
+    "static/css/main.c641d45a.chunk.css.map": "/sunnyside-agency-landing-page-main-in-react/static/css/main.c641d45a.chunk.css.map",
+    "static/js/2.e64b3d8f.chunk.js.LICENSE.txt": "/sunnyside-agency-landing-page-main-in-react/static/js/2.e64b3d8f.chunk.js.LICENSE.txt",
+    "static/media/icon-arrow-down.979ef07a.svg": "/sunnyside-agency-landing-page-main-in-react/static/media/icon-arrow-down.979ef07a.svg",
+    "static/media/image-header.49b52ffa.jpg": "/sunnyside-agency-landing-page-main-in-react/static/media/image-header.49b52ffa.jpg",
+    "static/media/image-header.9167cda0.jpg": "/sunnyside-agency-landing-page-main-in-react/static/media/image-header.9167cda0.jpg",
+    "static/media/logo.5dd18954.svg": "/sunnyside-agency-landing-page-main-in-react/static/media/logo.5dd18954.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.88c781cd.js",
     "static/js/2.e64b3d8f.chunk.js",
-    "static/css/main.c977b81f.chunk.css",
-    "static/js/main.94499f85.chunk.js"
+    "static/css/main.c641d45a.chunk.css",
+    "static/js/main.41271920.chunk.js"
   ]
 }
