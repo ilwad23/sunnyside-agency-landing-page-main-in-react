@@ -8,12 +8,14 @@ import MenuIcon from "@material-ui/icons/Menu";
 
 const Header = () => {
   const section = useRef();
-  const desktopOrMobile = section.current?.width>575;
+  const [width, setWidth] = useState(section.current?.width);
+  const [desktopOrMobile, setdesktopOrMobile] = useState(width > 575);
   const [show, setShow] = useState(false);
-  const HeaderPic = desktopOrMobile? HeaderPicD : HeaderPicM;
-
+  const HeaderPic = desktopOrMobile ? HeaderPicD : HeaderPicM;
   useEffect(() => {
-  });
+    setWidth(section.current?.width);
+    setdesktopOrMobile(width > 575);
+  }, [section.current?.width]);
   return (
     <header className="header">
       <img ref={section} src={HeaderPic} alt="Header" className="header_img" />
@@ -23,7 +25,7 @@ const Header = () => {
         alt="arrow facing down"
         style={{
           display: show && "none",
-          top: `${section.current?.height/2}px`,
+          top: `${section.current?.height / 2}px`,
           left: `${section.current?.width / 2}px`,
         }}
       />
