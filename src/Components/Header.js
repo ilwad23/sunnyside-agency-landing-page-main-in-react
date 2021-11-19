@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "../css/header.css";
 import HeaderPicD from "../images/desktop/image-header.jpg";
 import HeaderPicM from "../images/mobile/image-header.jpg";
@@ -6,19 +6,26 @@ import Logo from "../images/logo.svg";
 import Arrow from "../images/icon-arrow-down.svg";
 import MenuIcon from "@material-ui/icons/Menu";
 
-const Header = ({ desktopOrMobile }) => {
+const Header = () => {
+  const section = useRef();
+  const desktopOrMobile = section.current?.width>575;
   const [show, setShow] = useState(false);
-  const desktop = desktopOrMobile === "desktop";
-  const HeaderPic = desktopOrMobile === "desktop" ? HeaderPicD : HeaderPicM;
-  console.log(desktopOrMobile);
+  const HeaderPic = desktopOrMobile? HeaderPicD : HeaderPicM;
+
+  useEffect(() => {
+  });
   return (
     <header className="header">
-      <img src={HeaderPic} alt="Header" className="header_img" />
+      <img ref={section} src={HeaderPic} alt="Header" className="header_img" />
       <img
         src={Arrow}
         className="header_arrow-down"
         alt="arrow facing down"
-        style={{ display: show && "none" }}
+        style={{
+          display: show && "none",
+          top: `${section.current?.height/2}px`,
+          left: `${section.current?.width / 2}px`,
+        }}
       />
       <nav>
         <img src={Logo} className="header_logo" alt="logo" />
@@ -27,18 +34,18 @@ const Header = ({ desktopOrMobile }) => {
           onClick={() => setShow(!show)}
           style={{
             color: show === false && "white",
-            display: desktop && "none",
+            display: desktopOrMobile ? "none" : "block",
           }}
         />
 
         <div
           className="header_arrow-left"
-          style={{ display: !show && !desktop && "none" }}
+          style={{ display: !show && !desktopOrMobile && "none" }}
         ></div>
 
         <div
           className="header_menu-links"
-          style={{ display: !show && !desktop && "none" }}
+          style={{ display: !show && !desktopOrMobile && "none" }}
         >
           <div>
             <h4>About</h4>

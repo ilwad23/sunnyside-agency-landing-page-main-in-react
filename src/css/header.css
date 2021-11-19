@@ -11,8 +11,6 @@ header {
 }
 .header_arrow-down {
   position: absolute;
-  bottom: 57vh;
-  left: 50vw;
 }
 
 .header_title {
@@ -23,11 +21,10 @@ header {
   font-weight: 900;
   letter-spacing: 5.6px;
   margin: 30px auto;
+  margin-top: 50px;
   text-align: center;
 }
 .header_logo {
-  /* width: fit-content;
-  height: fit-content; */
   padding-top: 3vh;
 }
 nav {
@@ -35,7 +32,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
   padding: 0px 40px;
 }
 .header_menu-links {
@@ -53,7 +49,8 @@ nav {
   font-size: 1.3rem;
   font-weight: 600;
   margin: 10px;
-  padding: 15px 25px;
+  padding: 1vh 25px;
+  padding: 1vh 2vw;
   border-radius: 30px;
 }
 #header_yellow-btn {
@@ -62,18 +59,23 @@ nav {
   color: #000;
   font-weight: 700;
 }
-@media (max-width: 375px) {
+@media (max-width: 775px) {
+  nav {
+    background-color:crimson;
+    height: 10vh;
+  }
+  .header_menu-links div {
+    padding: 1vh 1vw;
+  }
+}
+@media (max-width: 575px) {
   header,
   .header_img {
-    width: 375px;
+    width: 100vw;
     height: 534px;
   }
   .header_logo {
     padding-top: 20px;
-  }
-  .header_arrow-down {
-    top: 280px;
-    left: 165px;
   }
   .header_title {
     font-size: 1.5rem;
