@@ -1,18 +1,24 @@
 header {
   position: relative;
   width: 100vw;
-  max-height: 800px;
+  height:min-content;
+  background-color: red;
 }
 .header_img {
   width: 100vw;
-  max-height: 800px;
-  position: absolute;
-  z-index: -100;
 }
 .header_arrow-down {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
 }
-
+.header_content {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
 .header_title {
   font-size: 2.2vw;
   color: #fff;
@@ -110,4 +116,4 @@ nav {
     border-bottom: 30px solid transparent;
     border-right: 30px solid white;
   }
-}
+} 
