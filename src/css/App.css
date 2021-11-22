@@ -9,7 +9,6 @@ body {
   width: 100vw;
 }
 .app {
-  background-color: rgb(94, 32, 218);
-  width: 100px;
-  height:100%;
+  background-color: blue;
+  width: 100vw;
 }
