@@ -6,21 +6,23 @@
 }
 .service,
 .service_img {
-  width: 720px;
-  height: 600px;
+  width: 50vw;
 }
-.service_img {
+.service_content {
   position: absolute;
-  z-index: -100;
+  top: 0;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .service_text {
-  position: absolute;
-  bottom: 60px;
-  left: 150px;
   text-align: center;
   font-family: "Fraunces";
   font-weight: bolder;
-  width: 450px;
+  width: 70%;
+  margin-bottom: 3vw; 
 }
 .service_para {
   font-family: "Barlow" !important;
@@ -29,15 +31,19 @@
   padding: 30px 30px;
   line-height: 22.3px;
 }
-@media (max-width: 375px) {
+@media (max-width: 750px) and (min-width:576px) {
+  .service_content {display: block;}
+  .service_text {margin: 0 auto; margin-top: 2vw;width: 80%;}
+}
+@media (max-width: 575px) {
+ 
   .services {
     display: block;
   }
-  .service,
-  .service_img {
-    width: 375px;
-    height: 600px;
-  }
+ .service,
+.service_img {
+  width: 100vw;
+}
   .service_text {
     left: 0px;
     width: 100%;
