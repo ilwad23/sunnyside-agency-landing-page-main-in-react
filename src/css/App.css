@@ -2,7 +2,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
   font-size: 18px;
   font-family: "Barlow" serif;
+  background-color: black;
+  width: 100vw;
+}
+.app {
+  background-color: rgb(94, 32, 218);
+  width: 100px;
+  height:100%;
 }

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState} from "react";
 import "../css/header.css";
 import HeaderPicD from "../images/desktop/image-header.jpg";
 import HeaderPicM from "../images/mobile/image-header.jpg";
@@ -6,22 +6,15 @@ import Logo from "../images/logo.svg";
 import Arrow from "../images/icon-arrow-down.svg";
 import MenuIcon from "@material-ui/icons/Menu";
 
-const Header = () => {
-  const section = useRef();
-  const [width, setWidth] = useState(section.current?.width);
-  const [desktopOrMobile, setdesktopOrMobile] = useState(width > 575);
+const Header = ({ desktopOrMobile }) => {
   const HeaderPic = desktopOrMobile ? HeaderPicD : HeaderPicM;
   const [show, setShow] = useState(false);
-  useEffect(() => {
-    setWidth(section.current?.width);
-    setdesktopOrMobile(width > 575);
-  });
+
   return (
     <header
       className="header"
-      // style={{ height: `${section.current?.height}px` }}
     >
-      <img ref={section} src={HeaderPic} alt="Header" className="header_img" />
+      <img src={HeaderPic} alt="Header" className="header_img" />
       <img
         src={Arrow}
         className="header_arrow-down"
