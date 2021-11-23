@@ -5,10 +5,10 @@ body {
   overflow-x: hidden;
   font-size: 18px;
   font-family: "Barlow" serif;
-  background-color: black;
   width: 100vw;
+  background: black;
 }
 .app {
-  background-color: blue;
+  background: white;
   width: 100vw;
 }

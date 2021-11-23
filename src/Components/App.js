@@ -3,9 +3,9 @@ import "../css/App.css";
 import Header from "./Header";
 import Benefits from "./Benefits";
 import Services from "./Services";
-// import Testimonials from "./Testimonials";
-// import Gallery from "./Gallery";
-// import Footer from "./Footer";
+import Testimonials from "./Testimonials";
+import Gallery from "./Gallery";
+import Footer from "./Footer";
 
 const useScreenSize = () => {
   const [size, setSize] = useState(window.innerWidth);
@@ -39,10 +39,9 @@ function App() {
         para="Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places."
       />
       <Services imgSize={desktopOrMobile} />
-      {/*
       <Testimonials imgSize={desktopOrMobile} />
       <Gallery imgSize={[width, desktopOrMobile]} />
-      <Footer imgSize={desktopOrMobile} /> */}
+      <Footer imgSize={desktopOrMobile} /> 
     </div>
   );
 }
