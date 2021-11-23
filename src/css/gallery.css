@@ -1,8 +1,17 @@
-@media (min-width: 376px) {
+.gallery {
+  width: 100vw;
+}
+@media (max-width: 575px) {
+  .gallery_img {
+    width: 50vw;
+  }
+}
+@media (min-width: 576px) {
   .gallery {
     display: flex;
     flex-wrap: nowrap;
-    position: relative;
-    background-color: #ff0;
+  }
+  .gallery_img {
+    width: 25vw;
   }
 }

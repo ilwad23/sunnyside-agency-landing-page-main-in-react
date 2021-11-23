@@ -1,5 +1,5 @@
 .footer {
-  width: 1440px;
+  width: 100vw;
   height: 375px;
   background-color: hsl(168, 37%, 63%);
   color: hsl(168, 41%, 25%) !important;
@@ -26,9 +26,9 @@
 .footer_icons img {
   padding: 40px 20px;
 }
-@media (max-width: 375px) {
+@media (max-width: 575px) {
   .footer {
-    width: 375px;
+    width: 100vw;
   }
   .footer_menu-links {
     display: flex;
